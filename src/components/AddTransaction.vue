@@ -8,12 +8,12 @@
     ])
 
     const onSubmit = () => {
-        const trasactionData = {
+        const transactionData = {
             text: text.value,
             amount: parseFloat(amount.value),
         }
 
-        emit('transactionSubmitted', trasactionData)
+        emit('transactionSubmitted', transactionData)
 
         text.value = ''
         amount.value = ''
@@ -31,6 +31,6 @@
             <label for="amount">Enter Transaction Amount</label>
             <input type="text" id="amount" v-model="amount" placeholder="Enter Negative Value for Expenses" />
         </div>
-        <button class="btn">Add transaction</button>
+        <button class="btn">Add Transaction</button>
     </form>
 </template>
