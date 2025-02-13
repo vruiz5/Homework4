@@ -71,3 +71,7 @@
         <TransactionList :transactions="transactions" @transactionDeleted="handleDelete"></TransactionList>
     </div>
 </template>
+
+<style scoped>
+@import './style.css';
+</style>
